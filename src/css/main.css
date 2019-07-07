@@ -1,0 +1,43 @@
+@import 'reset.css';
+@import 'text.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'content-intro.css';
+@import 'content-about.css';
+@import 'content-contact.css';
+@import 'content-projects.css';
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3d3434;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.top {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  height: 44px;
+  display: block;
+  text-align: right;
+}
+
+.goto {
+  margin: 0;
+  float: right;
+  padding: 12px;
+  font-size: 20px;
+  text-decoration: none;
+}

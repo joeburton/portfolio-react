@@ -1,0 +1,90 @@
+header {
+  height: 70px;
+  border-top: 0;
+  background-color: #2f4f4f;
+  display: block;
+}
+
+header {
+  height: 70px;
+  border-top: 0;
+  background-color: #2f4f4f;
+  display: block;
+}
+
+header nav {
+  text-align: center;
+  padding: 28px 0 0 20px;
+}
+
+header nav ul {
+  display: inline;
+}
+
+header nav li {
+  padding: 0 10px 0 0;
+  margin: 0;
+  display: inline;
+}
+
+header nav li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav li a:hover {
+  color: #95c50e;
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.logo.spin {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.logo {
+  padding: 11px 0 0 2px;
+  display: inline-block;
+  float: right;
+  position: relative;
+  right: 0;
+  margin: -35px 20px 0 0;
+  border-radius: 40px;
+  border: 2px solid #ccc;
+  width: 43px;
+  height: 34px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: none;
+  background: url(../images/me.jpg) 0 0;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+}
+
+.logo span {
+  display: none;
+}
+
+.logo.spin {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
