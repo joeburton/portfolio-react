@@ -1,7 +1,7 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = {
+const config = {
   entry: './src/index.js',
   mode: 'development',
   output: {
@@ -71,4 +71,18 @@ module.exports = {
     ]
   },
   plugins: [new CopyWebpackPlugin([{ from: 'src/images', to: 'images' }, { from: 'src/index.html', to: './' }])]
+};
+
+module.exports = (env, argv) => {
+  if (argv.mode === 'development') {
+    config.devtool = 'inline-source-map';
+    console.log(argv.mode);
+  }
+
+  if (argv.mode === 'production') {
+    config.devtool = false;
+    console.log(argv.mode);
+  }
+
+  return config;
 };
