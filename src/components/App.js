@@ -6,7 +6,7 @@ import Footer from './Footer';
 function scrollTo(e) {
   const element = document.querySelector(e.target.hash).offsetTop;
   e.preventDefault();
-  window.scroll({
+  window.scrollTo({
     behavior: 'smooth',
     left: 0,
     top: element
