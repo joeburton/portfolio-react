@@ -1,4 +1,5 @@
 import React from 'react';
+import BackToTop from './BackToTop';
 
 const ContentAbout = props => {
   return (
@@ -20,11 +21,7 @@ const ContentAbout = props => {
             </h4>
           </div>
         </div>
-        <div className="top">
-          <a href="#top" className="goto">
-            ^
-          </a>
-        </div>
+        <BackToTop scrollTo={props.scrollTo} />
       </div>
     </section>
   );

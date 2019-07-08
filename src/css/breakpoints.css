@@ -1,0 +1,29 @@
+/*
+media queries used in conjunction with lmn-js/breakpoints.js
+these must be combined with bootstrap's less variables
+*/
+
+body:after {
+  content: 'xs'; /* represent the current width-bracket */
+  font-size: 1px;
+  background: #ccc;
+  display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body:after {
+    content: 'sm'; /* represent the current width-bracket */
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body:after {
+    content: 'md'; /* represent the current width-bracket */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body:after {
+    content: 'lg'; /* represent the current width-bracket */
+  }
+}

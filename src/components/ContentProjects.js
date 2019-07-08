@@ -1,4 +1,5 @@
 import React from 'react';
+import BackToTop from './BackToTop';
 
 const projects = [
   {
@@ -187,11 +188,7 @@ const ContentProjects = props => {
             <ProjectList projects={projects} />
           </ul>
         </div>
-        <div className="top">
-          <a href="#top" className="goto">
-            ^
-          </a>
-        </div>
+        <BackToTop scrollTo={props.scrollTo} />
       </div>
     </section>
   );

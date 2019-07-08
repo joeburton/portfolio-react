@@ -9,9 +9,9 @@ const Content = props => {
   return (
     <section className="main">
       <ContentIntro />
-      <ContentProjects />
-      <ContentAbout />
-      <ContentContact />
+      <ContentProjects scrollTo={props.scrollTo} />
+      <ContentAbout scrollTo={props.scrollTo} />
+      <ContentContact scrollTo={props.scrollTo} />
     </section>
   );
 };

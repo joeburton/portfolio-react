@@ -14,7 +14,7 @@ module.exports = {
     watchContentBase: true,
     progress: true
   },
-
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {

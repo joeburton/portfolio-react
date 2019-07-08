@@ -6,17 +6,23 @@ const Header = props => {
       <nav>
         <ul>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={props.scrollTo}>
+              Projects
+            </a>
           </li>
           <li>
-            <a href="#about">About Me</a>
+            <a href="#about" onClick={props.scrollTo}>
+              About Me
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={props.scrollTo}>
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
-      <a href="#" className="logo spin">
+      <a href="#" className="logo">
         <span>JB</span>
       </a>
     </header>
