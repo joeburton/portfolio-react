@@ -156,10 +156,21 @@ const projects = [
   }
 ];
 
+let keyCount = 0;
+
+function getKey() {
+  return keyCount++;
+}
+
+function Links(props) {
+  const links = props.links.map(urlSet => <a key={getKey()} href={`${urlSet.link}`} target="_blank">{`${urlSet.visual}`}</a>);
+  return links;
+}
+
 function ProjectList(props) {
   const projects = props.projects.map(project => (
-    <li key={project.logo}>
-      {project.logo && <img src={`images/${project.logo}`} alt={`${project.company}`} className={`company-logo ${project.class}`} />}
+    <li key={getKey()}>
+      {project.logo && <img src={`assets/images/${project.logo}`} alt={`${project.company}`} className={`company-logo ${project.class}`} />}
       {project.role && <h6>Role&#58; {project.role}</h6>}
       {project.projectName && <h6 className="no-logo">{project.projectName}</h6>}
       {project.skills && (
@@ -167,11 +178,7 @@ function ProjectList(props) {
           <span>Skills&#58;</span> <span dangerouslySetInnerHTML={{ __html: project.skills }} />
         </p>
       )}
-      {project.links && (
-        <a href={`${project.links[0].link}`} target="_blank">
-          {`${project.links[0].visual}`}
-        </a>
-      )}
+      {project.links && <Links links={project.links} />}
     </li>
   ));
 

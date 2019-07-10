@@ -2,7 +2,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
-  entry: './src/index.js',
+  entry: './src/assets/index.js',
   mode: 'development',
   output: {
     filename: './main.js'
@@ -70,7 +70,7 @@ const config = {
       }
     ]
   },
-  plugins: [new CopyWebpackPlugin([{ from: 'src/images', to: 'images' }, { from: 'src/index.html', to: './' }])]
+  plugins: [new CopyWebpackPlugin([{ from: './src/assets/images', to: 'assets/images' }, { from: 'src/index.html', to: './' }])]
 };
 
 module.exports = (env, argv) => {

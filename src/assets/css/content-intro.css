@@ -20,8 +20,8 @@
 }
 
 .intro .frame .welcome {
-  font-size: 60px;
-  font-size: 6rem;
+  font-size: 40px;
+  font-size: 4rem;
   padding: 0 5px;
 }
 
@@ -31,8 +31,18 @@
 }
 
 .intro h1 {
-  background: url(../images/line.png) repeat-x;
-  background-position: left center;
-  margin: 30px 0 20px;
+  margin: 0px 0 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .intro .frame .welcome {
+    font-size: 60px;
+    font-size: 6rem;
+    padding: 0 5px;
+  }
+
+  .intro h1 {
+    margin: 30px 0 20px;
+  }
 }

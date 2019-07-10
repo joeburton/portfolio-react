@@ -69,9 +69,6 @@ header nav li a:hover {
   font-weight: lighter;
   text-align: center;
   text-decoration: none;
-  background: url(../images/me.jpg) 0 0;
-  background-repeat: no-repeat;
-  background-size: 50px 50px;
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
   -o-transition-duration: 0.8s;

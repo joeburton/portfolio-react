@@ -1,11 +1,16 @@
 import React from 'react';
 
+const rule = {
+  background: 'url(assets/images/line.png) repeat-x',
+  backgroundPosition: 'left center'
+};
+
 const ContentIntro = props => {
   return (
     <section className="intro">
       <div className="content">
         <div className="frame">
-          <h1>
+          <h1 style={rule}>
             <span className="welcome">Welcome</span>
           </h1>
           <div>
