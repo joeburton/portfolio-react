@@ -5,7 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development",
-    "build": "webpack -p --mode=production"
+    "build": "webpack -p --mode=production",
+    "test": "jest --coverage --verbose --watchAll"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./tests/setup/setupEnzyme.js"
+    ],
+    "testPathIgnorePatterns": [
+      "./tests/setup/"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(svg|css|less|scss)$": "babel-jest"
+    }
   },
   "author": "",
   "license": "ISC",
@@ -21,9 +33,12 @@
     "babel-loader": "^8.0.4",
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^2.1.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^4.0.0",
     "image-webpack-loader": "^5.0.0",
+    "jest": "^24.8.0",
     "mini-css-extract-plugin": "^0.5.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
