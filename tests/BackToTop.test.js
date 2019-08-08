@@ -1,21 +1,22 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 
 import BackToTop from '../src/assets/components/BackToTop';
 
+const props = {
+  scrollTo: jest.fn()
+};
+
 describe('BackToTop', () => {
   it('should render a <BackToTop /> component', () => {
-    const wrapper = shallow(<BackToTop />);
+    const wrapper = shallow(<BackToTop {...props} />);
 
-    // test component wrapper
     expect(wrapper.type()).toEqual('div');
     expect(wrapper.hasClass('top')).toBe(true);
 
-    // test first child
     expect(wrapper.childAt(0).type()).toEqual('a');
     expect(wrapper.childAt(0).hasClass('goto')).toBe(true);
 
-    // test first child html content
     expect(
       wrapper.childAt(0).containsMatchingElement(
         <a href="#root" className="goto">
@@ -23,5 +24,13 @@ describe('BackToTop', () => {
         </a>
       )
     ).toEqual(true);
+  });
+
+  it('should call the prop function scrollTo when clicking the back to top link', () => {
+    const wrapper = shallow(<BackToTop {...props} />);
+    const link = wrapper.childAt(0);
+    link.simulate('click');
+    console.log(link.debug());
+    expect(props.scrollTo).toHaveBeenCalled();
   });
 });
