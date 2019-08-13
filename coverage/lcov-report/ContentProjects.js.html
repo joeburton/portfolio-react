@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">27.27% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>3/11</span>
+        <span class='fraction'>11/11</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/10</span>
+        <span class='fraction'>10/10</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">30% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>3/10</span>
+        <span class='fraction'>10/10</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -253,7 +253,7 @@
 <a name='L205'></a><a href='#L205'>205</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -408,20 +408,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">82x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">46x</span>
+<span class="cline-any cline-yes">36x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">36x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -434,11 +434,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -614,18 +614,18 @@ const projects = [
 &nbsp;
 let keyCount = 0;
 &nbsp;
-function <span class="fstat-no" title="function not covered" >getKey(</span>) {
-<span class="cstat-no" title="statement not covered" >  return keyCount++;</span>
+function getKey() {
+  return keyCount++;
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >Links(</span>props) {
-  const links = <span class="cstat-no" title="statement not covered" >props.links.map(<span class="fstat-no" title="function not covered" >ur</span>lSet =&gt; <span class="cstat-no" title="statement not covered" >&lt;a key={getKey()} href={`${urlSet.link}`} target="_blank"&gt;{`${urlSet.visual}`}&lt;/a&gt;)</span>;</span>
-<span class="cstat-no" title="statement not covered" >  return links;</span>
+function Links(props) {
+  const links = props.links.map(urlSet =&gt; &lt;a key={getKey()} href={`${urlSet.link}`} target="_blank"&gt;{`${urlSet.visual}`}&lt;/a&gt;);
+  return links;
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >ProjectList(</span>props) {
-  const projects = <span class="cstat-no" title="statement not covered" >props.projects.map(<span class="fstat-no" title="function not covered" >pr</span>oject =&gt; (</span>
-<span class="cstat-no" title="statement not covered" >    &lt;li key={getKey()}&gt;</span>
+function ProjectList(props) {
+  const projects = props.projects.map(project =&gt; (
+    &lt;li key={getKey()}&gt;
       {project.logo &amp;&amp; &lt;img src={`assets/images/${project.logo}`} alt={`${project.company}`} className={`company-logo ${project.class}`} /&gt;}
       {project.role &amp;&amp; &lt;h6&gt;Role&amp;#58; {project.role}&lt;/h6&gt;}
       {project.projectName &amp;&amp; &lt;h6 className="no-logo"&gt;{project.projectName}&lt;/h6&gt;}
@@ -638,11 +638,11 @@ function <span class="fstat-no" title="function not covered" >ProjectList(</span
     &lt;/li&gt;
   ));
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return projects;</span>
+  return projects;
 }
 &nbsp;
-const ContentProjects = <span class="fstat-no" title="function not covered" >pr</span>ops =&gt; {
-<span class="cstat-no" title="statement not covered" >  return (</span>
+const ContentProjects = props =&gt; {
+  return (
     &lt;section id="projects" className="projects"&gt;
       &lt;div className="content"&gt;
         &lt;div className="frame"&gt;
@@ -664,7 +664,7 @@ export default ContentProjects;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Aug 08 2019 13:37:20 GMT+0100 (British Summer Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Aug 13 2019 16:10:49 GMT+0100 (British Summer Time)
 </div>
 </div>
 <script src="prettify.js"></script>

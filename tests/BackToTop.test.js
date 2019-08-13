@@ -30,7 +30,6 @@ describe('BackToTop', () => {
     const wrapper = shallow(<BackToTop {...props} />);
     const link = wrapper.childAt(0);
     link.simulate('click');
-    console.log(link.debug());
     expect(props.scrollTo).toHaveBeenCalled();
   });
 });
