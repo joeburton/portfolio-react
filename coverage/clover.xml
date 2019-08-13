@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1565709049559" clover="3.2.0">
-  <project timestamp="1565709049559" name="All files">
+<coverage generated="1565722516003" clover="3.2.0">
+  <project timestamp="1565722516003" name="All files">
     <metrics statements="24" coveredstatements="24" conditionals="10" coveredconditionals="10" methods="12" coveredmethods="12" elements="46" coveredelements="46" complexity="0" loc="24" ncloc="24" packages="1" files="7" classes="7"/>
     <file name="BackToTop.js" path="/Users/joe/Sites/portfolio-react/src/assets/components/BackToTop.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
